@@ -1,0 +1,25 @@
+#include "europeanOption.hpp"
+#include <pybind11/pybind11.h>
+#include <pybind11/stl.h>
+
+namespace py = pybind11;
+
+PYBIND11_MODULE(my_option_pricer, m) {
+  m.doc() = "A high-performance C++ Monte Carlo option pricer";
+
+  py::class_<EuropeanOption>(m, "EuropeanOption")
+
+      .def(py::init<double, double, double, double, double, unsigned int>(),
+           "Create an option with a specific seed", py::arg("initStockPrice"),
+           py::arg("strikePrice"), py::arg("riskFreeIntRate"),
+           py::arg("volatility"), py::arg("timeToExpire"), py::arg("seed"))
+
+      .def(py::init<double, double, double, double, double>(),
+           "Create an option with a random seed", py::arg("initStockPrice"),
+           py::arg("strikePrice"), py::arg("riskFreeIntRate"),
+           py::arg("volatility"), py::arg("timeToExpire"))
+
+      .def("calculatePrice", &EuropeanOption::calculatePrice,
+           "Calculate the European Call and Put option prices",
+           py::arg("numSimulations"));
+}

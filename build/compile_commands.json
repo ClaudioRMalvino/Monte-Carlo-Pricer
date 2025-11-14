@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/claudio/Projects/cpp_projects/monte-carlo-pricer/build",
+  "command": "/home/claudio/miniconda3/bin/x86_64-conda-linux-gnu-c++ -Dmy_option_pricer_EXPORTS -isystem /home/claudio/miniconda3/include/python3.13 -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/claudio/miniconda3/include -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++20 -o CMakeFiles/my_option_pricer.dir/europeanOption.cpp.o -c /home/claudio/Projects/cpp_projects/monte-carlo-pricer/europeanOption.cpp",
+  "file": "/home/claudio/Projects/cpp_projects/monte-carlo-pricer/europeanOption.cpp"
+},
+{
+  "directory": "/home/claudio/Projects/cpp_projects/monte-carlo-pricer/build",
+  "command": "/home/claudio/miniconda3/bin/x86_64-conda-linux-gnu-c++ -Dmy_option_pricer_EXPORTS -isystem /home/claudio/miniconda3/include/python3.13 -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/claudio/miniconda3/include -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++20 -o CMakeFiles/my_option_pricer.dir/binding.cpp.o -c /home/claudio/Projects/cpp_projects/monte-carlo-pricer/binding.cpp",
+  "file": "/home/claudio/Projects/cpp_projects/monte-carlo-pricer/binding.cpp"
+}
+]
